@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background-color: #fbfbfb;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arimo', sans-serif;
+}
+
+a {
+  color: #ed141d;
+}
+
+body {
+  margin: 0 auto;
+  width: 90%;
+}
+
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+.border {
+  border: 1px dotted #e2e2e2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-right {
+  margin: .4em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#wrapper {
+  border: 1px dotted #151515;
+  margin-bottom: 4em;
+}
+
+.container {
+  border: 1px dotted #e2e2e2;
+  margin: .8em;
+  padding: .6em;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-container .item {
+  background-color: #fff;
+  flex: 1;
+  margin: .8em;
+  padding: .6em;
+}
+
+.header {
+  color: #ed141d;
+  flex: 1 100%;
+  font-size: 2em;
+  padding: .4em 0;
+  position: relative;
+}
+.header.header-full {
+  border-bottom: 1px dotted #e2e2e2;
+  text-transform: capitalize;
+  width: 100%;
+}
+.header span {
+  color: #7b7b7b;
+  font-size: .4em;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 1.6em;
+}
+
+.nested-heading {
+  font-size: 1.3em;
+}
+
+.footer.footer-full {
+  border-top: 1px dotted #e2e2e2;
+  width: 100%;
+  padding: .4em 0;
+}
+.footer a {
+  color: #7b7b7b;
+  text-decoration: none;
+}
+.footer p {
+  padding: .4em .2em;
+}
+
+@media (max-width: 600px) {
+  .header-full {
+    padding: .8em 0;
+  }
+
+  .flex-container {
+    display: block;
+  }
+}

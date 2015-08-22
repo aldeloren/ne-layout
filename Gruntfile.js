@@ -13,6 +13,7 @@ module.exports = function( grunt ) {
     },
     watch: {
       css: {
+        style: 'compressed',
         files: 'src/scss/main.scss',
         tasks: ['sass'],
         options: {

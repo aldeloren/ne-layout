@@ -1,3 +1,131 @@
-html{
+@import 'reset';
 
+// Define color vaiables
+$light-grey: #fbfbfb;
+$text-red: #ed141d;
+
+$border-style: 1px dotted darken($light-grey, 10%);
+$border-style-dark: 1px dotted darken($light-grey, 90%);
+
+html{
+  background-color:$light-grey;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arimo', sans-serif;
+}
+
+a{
+  color: $text-red;
+}
+
+body{
+  margin: 0 auto;
+  width: 90%;
+}
+
+em{
+  font-style: italic;
+}
+
+h1{
+  font-size: 3em;
+}
+
+hr{
+  margin: 1em 0;
+}
+
+.border{
+  border: $border-style; 
+}
+
+.text-center{
+  text-align: center;
+}
+
+.top-right{
+  margin: .4em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#wrapper{
+  border: $border-style-dark;
+  margin-bottom: 4em;
+}
+
+.container{
+  border: $border-style;
+  margin: .8em;
+  padding: .6em;
+}
+
+// Flexbox container styles
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  .item{
+    background-color: #fff;
+    flex: 1;
+    margin: .8em;
+    padding: .6em;
+  }
+}
+
+.header{
+  color: $text-red;
+  flex: 1 100%;
+  font-size: 2em;
+  padding: .4em 0;
+  position: relative;
+  &.header-full{
+    border-bottom: $border-style;
+    text-transform: capitalize;
+    width: 100%;
+  }
+  span{
+    color: darken($light-grey, 50%);
+    font-size: .4em;
+  }
+}
+
+.heading{
+  font-weight: bold;
+}
+
+.sub-heading{
+  font-size: 1.6em;
+}
+
+.nested-heading{
+  font-size: 1.3em;
+}
+
+.footer{
+  &.footer-full{
+    border-top: $border-style;
+    width: 100%;
+    padding: .4em 0;
+  }
+  a{
+    color: darken($light-grey, 50%);
+    text-decoration: none;
+  }
+  p{
+    padding: .4em .2em;
+  }
+}
+
+// Mobile style
+// Single breakpoint for this simple example
+
+@media (max-width: 600px) {
+  .header-full{
+    padding: .8em 0;
+  }
+  .flex-container{
+    // We are no longer aligning items next to each other, allow them to flow naturally
+    display: block;
+  }
 }
