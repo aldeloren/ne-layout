@@ -1,92 +1,49 @@
+@import 'reset';
+
 // Define color vaiables
 $light-grey: #fbfbfb;
 $text-red: #ed141d;
 
+// Define border styles
 $border-style: 1px dotted darken($light-grey, 10%);
 $border-style-dark: 1px dotted darken($light-grey, 90%);
 
 html{
+  background-color:$light-grey;
   height: 100%;
   width: 100%;
+  font-family: 'Arimo', sans-serif;
 }
 
-body{
-  background-color: #fbfbfb;
+h1{
+  font-size: 3em;
 }
 
-// Override font family for all elements
-$text-elements: h1 h2 h3 h4 h5 p body;
-
-@each $element in $text-elements { 
-  .#{$element} {
-    font-family: 'Arimo', sans-serif
-  }
-  #{$element} {
-    font-family: 'Arimo', sans-serif
-  }
+h2{
+  font-size: 2em;
 }
 
 h1, h2, h3, h4, h5{
   font-weight: 700;
 }
 
-// Override link color
-a{
-  color: $text-red;
+hr{
+  margin: 1em 0;
 }
 
-// wrapper styles
-#wrapper{
-  border: $border-style-dark;
-  margin-bottom: 4em;
-}
-
-// Heading styles
-#header{
-  text-transform: capitalize;
+header{
   border-bottom: $border-style;
-  h2{
+  position: relative;
+  h1{
     color: $text-red;
-    font-size: 2em;
-  }
-  span{
-    color: darken( $light-grey, 50%);
-    padding: .4em;
+    padding: .4em 0;
   }
 }
 
-.top-right{
-  position: absolute;
-  right: 0;
-  top: 0;
+#content{
+  border: $border-style-dark; 
+  margin: 0 auto;
+  width: 90%;
 }
 
-.border{
-  border: $border-style;
-}
 
-.item{
-  background-color: #fff;
-  overflow: auto;
-  padding: .8em;
-  margin: .6em;
-}
-
-#footer{
-  border-top: $border-style;
-  padding: .6em;
-  a{
-    color: darken( $light-grey, 50%);
-  }
-}
-
-// Breakpoint for medium sized devices and smaller
-// Equivalent to BS's col-md breakpoint
-@media only screen and (max-width : 992px) {
-    .top-right{
-      top: -30px;
-   }
-   #header h2{
-     margin-top: 30px; 
-   }
-}
