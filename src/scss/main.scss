@@ -1,5 +1,3 @@
-@import 'reset';
-
 // Define color vaiables
 $light-grey: #fbfbfb;
 $text-red: #ed141d;
@@ -8,124 +6,87 @@ $border-style: 1px dotted darken($light-grey, 10%);
 $border-style-dark: 1px dotted darken($light-grey, 90%);
 
 html{
-  background-color:$light-grey;
   height: 100%;
   width: 100%;
-  font-family: 'Arimo', sans-serif;
 }
 
+body{
+  background-color: #fbfbfb;
+}
+
+// Override font family for all elements
+$text-elements: h1 h2 h3 h4 h5 p body;
+
+@each $element in $text-elements { 
+  .#{$element} {
+    font-family: 'Arimo', sans-serif
+  }
+  #{$element} {
+    font-family: 'Arimo', sans-serif
+  }
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 700;
+}
+
+// Override link color
 a{
   color: $text-red;
 }
 
-body{
-  margin: 0 auto;
-  width: 90%;
-}
-
-em{
-  font-style: italic;
-}
-
-h1{
-  font-size: 3em;
-}
-
-hr{
-  margin: 1em 0;
-}
-
-.border{
-  border: $border-style; 
-}
-
-.text-center{
-  text-align: center;
-}
-
-.top-right{
-  margin: .4em;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
+// wrapper styles
 #wrapper{
   border: $border-style-dark;
   margin-bottom: 4em;
 }
 
-.container{
-  border: $border-style;
-  margin: .8em;
-  padding: .6em;
-}
-
-// Flexbox container styles
-.flex-container{
-  display: flex;
-  flex-flow: row wrap;
-  .item{
-    background-color: #fff;
-    flex: 1;
-    margin: .8em;
-    padding: .6em;
-  }
-}
-
-.header{
-  color: $text-red;
-  flex: 1 100%;
-  font-size: 2em;
-  padding: .4em 0;
-  position: relative;
-  &.header-full{
-    border-bottom: $border-style;
-    text-transform: capitalize;
-    width: 100%;
+// Heading styles
+#header{
+  text-transform: capitalize;
+  border-bottom: $border-style;
+  h2{
+    color: $text-red;
+    font-size: 2em;
   }
   span{
-    color: darken($light-grey, 50%);
-    font-size: .4em;
+    color: darken( $light-grey, 50%);
+    padding: .4em;
   }
 }
 
-.heading{
-  font-weight: bold;
+.top-right{
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.sub-heading{
-  font-size: 1.6em;
+.border{
+  border: $border-style;
 }
 
-.nested-heading{
-  font-size: 1.3em;
+.item{
+  background-color: #fff;
+  overflow: auto;
+  padding: .8em;
+  margin: .6em;
 }
 
-.footer{
-  &.footer-full{
-    border-top: $border-style;
-    width: 100%;
-    padding: .4em 0;
-  }
+#footer{
+  border-top: $border-style;
+  padding: .6em;
   a{
-    color: darken($light-grey, 50%);
-    text-decoration: none;
-  }
-  p{
-    padding: .4em .2em;
+    color: darken( $light-grey, 50%);
   }
 }
 
-// Mobile style
-// Single breakpoint for this simple example
-
-@media (max-width: 600px) {
-  .header-full{
-    padding: .8em 0;
-  }
-  .flex-container{
-    // We are no longer aligning items next to each other, allow them to flow naturally
-    display: block;
-  }
+// Breakpoint for medium sized devices and smaller
+// Equivalent to BS's col-md breakpoint
+@media only screen and (max-width : 992px) {
+    .top-right{
+      top: -30px;
+   }
+   #header h2{
+     margin-top: 30px; 
+   }
 }

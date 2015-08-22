@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet" type="text/css">
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
-    <title>Northeastern Flexbox layout example</title>
-  </head>
-  <body>
-    <h1>Flexbox Example</h1> 
-    <hr>
-    <div id="wrapper">
-      <div class="flex-container">
-        <div class="header header-full">
-          <h2 class="heading text-center">Northeastern header full width text-center</h2>
-          <span class="top-right"><em>22 August 2015</em></span>
+      <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <title>Northeastern Responsive Divs Example</title>
+    </head>
+    <body>
+      <h1>Responsive Divs Example</h1> 
+      <hr>
+      <div id="wrapper" class="container">
+        <div class="row">
+          <div id="header" class="col-md-12">
+            <h2 class="text-center">Northeastern header full width text-center</h2> 
+            <span class="top-right"><em>22 August 2015</em></span>
+          </div><!-- ./#header -->
+          <div class="col-md-6">
+            <div class="item border">
+              <h3>First Heading</h3>
+              <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. <a href="http://www.northeastern.edu/" target="_blank">Direct trade photo booth</a> umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
+            </div><!-- ./item border-->
+          </div><!-- ./col-md-6 -->
+          <div class="col-md-6">
+            <div class="item border">
+              <h3>Second Heading</h3>
+              <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
+            </div><!-- ./item border-->
+          </div><!-- ./col-md-6 -->
         </div>
-        <div class="item border">
-          <h3 class="heading sub-heading">First Heading</h3>
-          <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. <a href="http://www.northeastern.edu/" target="_blank">Direct trade photo booth</a> umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
-        </div>
-        <div class="item border">
-          <h3 class="heading sub-heading">Second Heading</h3>
-          <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
-        </div>
-      </div>
-      <div class="container">
-        <div class="heading sub-heading">
-          <h3>Third Heading</h3>
-        </div>
-          <p>Hoodie organic craft beer mustache YOLO. Cardigan Marfa polaroid drinking vinegar literally, small batch flannel narwhal artisan beard. Sriracha cold-pressed mixtape vinyl, street art chillwave craft beer Wes Anderson. Seitan food truck gentrify literally. Cardigan mixtape fanny pack blog next level deep v.</p> 
-        <div class="flex-container">
-          <div class="item border">
-            <h4 class="heading nested-heading">Sub section Heading</h4>
-            <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
-          </div>
-          <div class="item border">
-            <h4 class="heading nested-heading">Sub section Heading</h4>
-            <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
-          </div>
-        </div>
-      </div>
-      <div class="footer footer-full">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="item border">
+              <h3>Third Heading</h3>
+              <p>Hoodie organic craft beer mustache YOLO. Cardigan Marfa polaroid drinking vinegar literally, small batch flannel narwhal artisan beard. Sriracha cold-pressed mixtape vinyl, street art chillwave craft beer Wes Anderson. Seitan food truck gentrify literally. Cardigan mixtape fanny pack blog next level deep v.</p> 
+              <div class="col-sm-6">
+                <div class="item border">
+                  <h4 class="sub-heading">Sub Heading</h4>
+                  <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
+                </div><!-- ./item border -->
+              </div><!-- ./col-sm-6 -->
+              <div class="col-sm-6">
+                <div class="item border">
+                  <h4 class="sub-heading">Sub Heading</h4>
+                  <p>Kickstarter hoodie readymade, asymmetrical hella gastropub four dollar toast dreamcatcher ennui ethical Odd Future. Direct trade photo booth umami four loko, organic ethical swag cronut pour-over Bushwick Williamsburg Intelligentsia gastropub mlkshk Pitchfork. Typewriter narwhal photo booth banjo fixie. Master cleanse ennui church-key keffiyeh cred, next level fashion axe. Sartorial salvia next level twee 8-bit cred, whatever forage locavore squid mlkshk XOXO flannel. Cliche bespoke cold-pressed gastropub kale chips. Aesthetic jean shorts organic, semiotics pop-up tote bag McSweeney's retro keytar High Life small batch mixtape whatever ugh fanny pack.</p>
+                </div><!-- ./item border -->
+              </div><!-- ./col-sm-6 -->
+            </div><!-- ./item border -->
+        </div><!-- ./col-md-12 -->
+      </div><!-- ./row -->
+      <div id="footer" class="row">
         <p>&copy; 2015 <a href="http://www.northeastern.edu" target="_blank">Orginization Name</a> All rights reserved. </p>
-      </div>
-    </div>
-  </body>
+      </div><!-- ./#footer -->
+    </div><!-- ./#wrapper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   </body>
 </html>
 
