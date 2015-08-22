@@ -10,10 +10,12 @@ This repository contains a few branches that demonstrate different techniques th
 - HTML5 syntax
 - Responsive divs
 
-### Flexbox
+### Responsive Divs (Bootstrap) 
 #### Advantages:
-* Allows for easy flow of content within containers
-* Supports order changes (for instance on resize)
-* Supports easier vertical alignment
+* Very easy, quick implementation of fully responsive layout
+* Repeatability of containers and intuitive nesting system
+* Nearly universal adoption, allowing greater readability between developers 
 #### Disadvantages:
-* Not supported in legacy browsers, and some currently available browsers
+* Heavy framework (120kb of CSS alone, included JS doubles the weight of the page)
+* Customization requires overriding many styles, and can lead to style complications
+* Large number of divs; This particular example comments the end of each containing div to attempt to keep track of each nesting
