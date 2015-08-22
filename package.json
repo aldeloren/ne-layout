@@ -1,0 +1,24 @@
+{
+  "name": "northeastern",
+  "version": "1.0.0",
+  "description": "Homework assignment for Northeastern University front end dev interview",
+  "url": "https://a1d.co/",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldeloren/northeastern-layout.git"
+  },
+  "author": "Anthony DeLorenzo",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/aldeloren/northeastern-layout/issues"
+  },
+  "homepage": "https://github.com/aldeloren/northeastern-layout#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
