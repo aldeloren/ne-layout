@@ -75,17 +75,98 @@ hr {
   margin: 1em 0;
 }
 
+em {
+  font-style: italic;
+}
+
 header {
   border-bottom: 1px dotted #e2e2e2;
   position: relative;
 }
 header h1 {
   color: #ed141d;
+  font-size: 2em;
   padding: .4em 0;
+  text-align: center;
+}
+header time {
+  color: #7b7b7b;
+  padding: .4em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+a {
+  color: #ed141d;
 }
 
 #content {
   border: 1px dotted #151515;
   margin: 0 auto;
+  overflow: auto;
   width: 90%;
+  margin-bottom: 4em;
+}
+
+article {
+  border: 1px dotted #e2e2e2;
+}
+article h3 {
+  font-size: 1.6em;
+}
+article h4 {
+  font-size: 1.3em;
+}
+
+.full-width {
+  margin: 1% auto;
+  overflow: hidden;
+  width: 98%;
+}
+.full-width aside {
+  padding: 1%;
+}
+
+.half-width {
+  padding: 1%;
+  width: 46%;
+}
+
+.half-width:nth-of-type(1) {
+  float: left;
+  margin: 1.5% .5% 1.5% 1%;
+}
+
+.half-width:nth-of-type(2) {
+  float: right;
+  margin: 1.5% 1% 1.5% .5%;
+}
+
+footer {
+  border-top: 1px dotted #e2e2e2;
+}
+footer p {
+  padding: .4em;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: .8em 0;
+  }
+
+  .half-width {
+    margin: 1% auto;
+    width: 98%;
+  }
+
+  .half-width:nth-of-type(1) {
+    float: none;
+    margin: 1%;
+  }
+
+  .half-width:nth-of-type(2) {
+    float: none;
+    margin: 1%;
+  }
 }
