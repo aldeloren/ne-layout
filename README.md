@@ -9,3 +9,11 @@ This repository contains a few branches that demonstrate different techniques th
 - Flexbox 
 - HTML5 syntax
 - Responsive divs
+
+### Flexbox
+#### Advantages:
+* Allows for easy flow of content within containers
+* Supports order changes (for instance on resize)
+* Supports easier vertical alignment
+#### Disadvantages:
+* Not supported in legacy browsers, and some currently available browsers
