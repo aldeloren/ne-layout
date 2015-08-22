@@ -6,6 +6,6 @@ This repository contains example(s) of a layout design as based on the supplied 
 
 This repository contains a few branches that demonstrate different techniques that demonstrate different techniques to accomplish the desired results. 
 
-- Flexbox 
-- HTML5 syntax
-- Responsive divs
+* [Flexbox](https://github.com/aldeloren/northeastern-layout/tree/flexbox)
+* [Responsive Divs/ Bootstrap](https://github.com/aldeloren/northeastern-layout/tree/flexbox)
+* [HTML5 Syntax](https://github.com/aldeloren/northeastern-layout/tree/html5)
