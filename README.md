@@ -15,6 +15,7 @@ This repository contains a few branches that demonstrate different techniques th
 * Very easy, quick implementation of fully responsive layout
 * Repeatability of containers and intuitive nesting system
 * Nearly universal adoption, allowing greater readability between developers 
+
 #### Disadvantages:
 * Heavy framework (120kb of CSS alone, included JS doubles the weight of the page)
 * Customization requires overriding many styles, and can lead to style complications
